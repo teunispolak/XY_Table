@@ -7,20 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1425D93247D94CC00FB9C71 /* chartread.c in Sources */ = {isa = PBXBuildFile; fileRef = E1444DDB247C597C009B0EFF /* chartread.c */; };
 		E14449BD247B0D07009B0EFF /* libargyll.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E14449B9247B0CAC009B0EFF /* libargyll.0.dylib */; };
 		E14449BE247B0D07009B0EFF /* libargyllicc.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E14449BA247B0CAD009B0EFF /* libargyllicc.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E14444FB247B0810009B0EFF /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		E14449A4247B091A009B0EFF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,8 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E14444FD247B0810009B0EFF /* XY_Table */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XY_Table; sourceTree = BUILT_PRODUCTS_DIR; };
-		E14449A6247B091A009B0EFF /* Chartread */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Chartread; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14449A6247B091A009B0EFF /* chartread */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chartread; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14449B1247B0B28009B0EFF /* libargyll.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libargyll.a; path = "../../mytools/hArgyll-1.9.2/lib/libargyll.a"; sourceTree = "<group>"; };
 		E14449B2247B0B29009B0EFF /* libargyllicc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libargyllicc.a; path = "../../mytools/hArgyll-1.9.2/lib/libargyllicc.a"; sourceTree = "<group>"; };
 		E14449B5247B0B87009B0EFF /* libargyll.la */ = {isa = PBXFileReference; lastKnownFileType = text; name = libargyll.la; path = "../../mytools/hArgyll-1.9.2/lib/libargyll.la"; sourceTree = "<group>"; };
@@ -383,16 +374,12 @@
 		E1444F26247C597F009B0EFF /* libimdi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libimdi.a; sourceTree = "<group>"; };
 		E1444F27247C597F009B0EFF /* refi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = refi.c; sourceTree = "<group>"; };
 		E1444F28247C597F009B0EFF /* refi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = refi.h; sourceTree = "<group>"; };
+		E16F52BD248303140029E0B7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E16F52BE248303200029E0B7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E1F068A3248302BD00369875 /* xy table Class diagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xy table Class diagram.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E14444FA247B0810009B0EFF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E14449A3247B091A009B0EFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -405,10 +392,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E105DFA12483005800A7ABE2 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1F068A3248302BD00369875 /* xy table Class diagram.png */,
+				E16F52BD248303140029E0B7 /* LICENSE */,
+				E16F52BE248303200029E0B7 /* README.md */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		E14444F4247B0810009B0EFF = {
 			isa = PBXGroup;
 			children = (
 				E14449BF247C500C009B0EFF /* src */,
+				E105DFA12483005800A7ABE2 /* resources */,
 				E14444FE247B0810009B0EFF /* Products */,
 				E14449AE247B094D009B0EFF /* Frameworks */,
 			);
@@ -417,8 +415,7 @@
 		E14444FE247B0810009B0EFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E14444FD247B0810009B0EFF /* XY_Table */,
-				E14449A6247B091A009B0EFF /* Chartread */,
+				E14449A6247B091A009B0EFF /* chartread */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -932,26 +929,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E14444FC247B0810009B0EFF /* XY_Table */ = {
+		E14449A5247B091A009B0EFF /* chartread */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1444504247B0810009B0EFF /* Build configuration list for PBXNativeTarget "XY_Table" */;
-			buildPhases = (
-				E14444F9247B0810009B0EFF /* Sources */,
-				E14444FA247B0810009B0EFF /* Frameworks */,
-				E14444FB247B0810009B0EFF /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = XY_Table;
-			productName = XY_Table;
-			productReference = E14444FD247B0810009B0EFF /* XY_Table */;
-			productType = "com.apple.product-type.tool";
-		};
-		E14449A5247B091A009B0EFF /* Chartread */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E14449AA247B091A009B0EFF /* Build configuration list for PBXNativeTarget "Chartread" */;
+			buildConfigurationList = E14449AA247B091A009B0EFF /* Build configuration list for PBXNativeTarget "chartread" */;
 			buildPhases = (
 				E14449A2247B091A009B0EFF /* Sources */,
 				E14449A3247B091A009B0EFF /* Frameworks */,
@@ -961,9 +941,9 @@
 			);
 			dependencies = (
 			);
-			name = Chartread;
+			name = chartread;
 			productName = Chartread;
-			productReference = E14449A6247B091A009B0EFF /* Chartread */;
+			productReference = E14449A6247B091A009B0EFF /* chartread */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -975,9 +955,6 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Teunis Polak";
 				TargetAttributes = {
-					E14444FC247B0810009B0EFF = {
-						CreatedOnToolsVersion = 9.4.1;
-					};
 					E14449A5247B091A009B0EFF = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -995,24 +972,17 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E14444FC247B0810009B0EFF /* XY_Table */,
-				E14449A5247B091A009B0EFF /* Chartread */,
+				E14449A5247B091A009B0EFF /* chartread */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E14444F9247B0810009B0EFF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E14449A2247B091A009B0EFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1425D93247D94CC00FB9C71 /* chartread.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1128,30 +1098,15 @@
 			};
 			name = Release;
 		};
-		E1444505247B0810009B0EFF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E1444506247B0810009B0EFF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		E14449AB247B091A009B0EFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Manual;
+				DEPLOYMENT_LOCATION = YES;
 				DEVELOPMENT_TEAM = "";
 				DSTROOT = /dbg;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				INSTALL_PATH = /bin;
 				LIBRARY_SEARCH_PATHS = "/Users/teunis/mytools/hArgyll-1.9.2/lib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1164,9 +1119,10 @@
 			buildSettings = {
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Manual;
+				DEPLOYMENT_LOCATION = YES;
 				DEVELOPMENT_TEAM = "";
 				DSTROOT = /dbg;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				INSTALL_PATH = /bin;
 				LIBRARY_SEARCH_PATHS = "/Users/teunis/mytools/hArgyll-1.9.2/lib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1186,16 +1142,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1444504247B0810009B0EFF /* Build configuration list for PBXNativeTarget "XY_Table" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E1444505247B0810009B0EFF /* Debug */,
-				E1444506247B0810009B0EFF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E14449AA247B091A009B0EFF /* Build configuration list for PBXNativeTarget "Chartread" */ = {
+		E14449AA247B091A009B0EFF /* Build configuration list for PBXNativeTarget "chartread" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E14449AB247B091A009B0EFF /* Debug */,

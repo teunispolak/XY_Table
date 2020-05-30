@@ -1,4 +1,5 @@
 
+ 
 /* Spectrometer/Colorimeter target test chart reader */
 
 /* 
@@ -55,7 +56,7 @@
  *           
  */
 
-#undef DEBUG
+#define DEBUG
 
 #define COMPORT 1		/* Default com port 1..4 */
 
@@ -67,6 +68,9 @@
 #ifdef __MINGW32__
 # define WINVER 0x0500
 #endif
+
+# define stricmp strcasecmp         // needed to to prevent compiler from throwing an error
+                                    // on stricmp() at line 1787 (tepo, May 2020)
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -1781,8 +1785,8 @@ printf("~1 using emis mode\n");
 					if (pix >= npat)
 						pix = 0;
 					for (;;) {
-						if (strcmp(scols[pix]->loc, bp) == 0)
-							break;         // change stricmp to strcmp to get chartread.c compiled
+						if (stricmp(scols[pix]->loc, bp) == 0)
+							break;
 						pix++;
 						if (pix >= npat)
 							pix = 0;
